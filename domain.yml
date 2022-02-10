@@ -1,0 +1,72 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - what_do_you_have
+  - vegetarian
+  - non_veg
+  - order_name_veg
+  - order_name_non_veg
+
+responses:
+
+  utter_botgreet:
+  - text: "how can i help you sir?"
+
+  utter_veg_nonveg:
+  - text: "which would you prefer veg or non veg? "
+
+  utter_veg:
+  - text: "we have mix veg, paneer masala, paneer butter masala, mushroom masala etc."
+
+  utter_nonveg:
+  - text: "we have egg curry, butter chicken, chicken masala, biryani etc."
+
+  utter_anythingelse:
+  - text: "anything else sir?"
+
+  utter_thanks:
+  - text: "thanks , we will get your order shortly."
+
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+actions:
+  - utter_botgreet
+  - utter_veg_nonveg
+  - utter_veg
+  - utter_nonveg
+  - utter_anythingelse
+  - utter_thanks
+  - utter_greet
+  - utter_cheer_up
+  - utter_did_that_help
+  - utter_happy
+  - utter_goodbye
+  - utter_iamabot
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
