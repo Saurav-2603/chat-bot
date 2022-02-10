@@ -20,8 +20,13 @@ responses:
   - text: "how can i help you sir?"
 
   utter_veg_nonveg:
-  - text: "which would you prefer veg or non veg? "
-
+  - text: "what would you prefer: "
+    buttons:
+    - title: "Vegetarian"
+      payload: '/vegetarian'
+    - title: "Non-Vegetarian"
+      payload: "/non_veg"
+  
   utter_veg:
   - text: "we have mix veg, paneer masala, paneer butter masala, mushroom masala etc."
 
