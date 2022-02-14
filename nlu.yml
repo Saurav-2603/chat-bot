@@ -102,9 +102,9 @@ nlu:
 
 - intent: non_veg
   examples: |
-    - non veg
-    - non vegetarian
-    - pure non veg
+    - non-veg
+    - non-vegetarian
+    - pure non-veg
 
 - intent: order_name_veg
   examples: |
@@ -114,6 +114,12 @@ nlu:
 
 - intent: order_name_non_veg
   examples: |
-    - get me 1 veg mix and paneer butter masala
-    - ni want 1 mix veg and masala mushroom
-    - i want green salad
+    - get me 1 chicken biryani
+    - ni want 1 chicken masala
+    - i want boiled egg
+
+- intent: get_name
+  examples: |
+    - my name is [saurav](name)
+    - I'm [raj](name)
+    - hello my name is [rahul](name) 
