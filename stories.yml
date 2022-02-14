@@ -28,4 +28,11 @@ stories:
   - intent: deny
   - action: utter_thanks
 
-
+- story: user_info
+  steps:
+  - intent: greet
+  - action: utter_botgreet
+  - intent: get_name
+    entities:
+    - slot_was_set: name
+  - action: utter_info
